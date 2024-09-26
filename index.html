@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.17.1/antd.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.17.1/antd.min.js"></script>
+  <title>Product Registration</title>
+</head>
+<body>
+  <div style="text-align: center; margin-bottom: 40px;">
+    <h1 style="color: #1890ff;">Register Products</h1>
+  </div>
+
+  <div class="form-container">
+    <form id="productForm">
+      <div class="form-item">
+        <input type="text" id="name" class="ant-input" placeholder="Product Name" required>
+      </div>
+      <div class="form-item">
+        <input type="number" id="price" class="ant-input" placeholder="Price" required>
+      </div>
+      <div class="form-item">
+        <input type="text" id="type" class="ant-input" placeholder="Product Type" required>
+      </div>
+      <div class="form-item">
+        <input type="text" id="unit" class="ant-input" placeholder="Unit of Measurement" required>
+      </div>
+      <div class="form-item">
+        <input type="date" id="date" class="ant-input" required>
+      </div>
+      <div class="form-item">
+        <input type="text" id="deliveredBy" class="ant-input" placeholder="Delivered By" required>
+      </div>
+      <button type="submit" class="ant-btn ant-btn-primary">Register Product</button>
+    </form>
+  </div>
+
+  <div style="text-align: center; margin: 40px 0;">
+    <h2 style="color: #1890ff;">Search Products</h2>
+    <input type="text" id="search" class="ant-input" placeholder="Search by Product Name">
+  </div>
+
+  <div class="product-list" id="productList">
+  </div>
+
+  <script src="./dist/app.js"></script>
+</body>
+</html>
